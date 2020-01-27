@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+html{
+    /*background-image: linear-gradient(to right, #01F800, #F818F8, #F81010, #F8F800, #01F8F8, #4070F8);*/
+	background-color: #10062B;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 100%;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+			
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.spritesheet{
+	display: none;
+}
+
+body{
+	font-family: 'Lato', 'Century Gothic', Arial, sans-serif;
+	color:white;
+}
+
+a{
+	font-size:125%;
+	border-right: 1px solid white;
+	padding: 0 15px;
+}
+
+#First{
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+img{
+	position:absolute;
+	width:35%;
+	left:3.5%;
+}
+
+.Logo{
+    z-index:-1;
+	top:30%;
+	left:22%;
+	height:25%;
+	width:55%;
+}
+
+#Title{
+    z-index:2;
+    font-size:700%;
+    position:fixed;
+	left:38%;
+}
+
+#LinkDiv{
+	position:absolute;
+	padding:2px;
+	top:1%;
+	right:1%;
+	margin:auto;
+}
+
+#LinkDiv a{
+	float:left;
+}
+
+#Scoreboard{
+    z-index:2;
+    font-size:300%;
+    position:fixed;
+	left:28%;
+	top:55%;
+	width: auto;	
+}
+
+#Scoreboard span{
+    float:left;	
+}
+
+.gameWindow{
+    z-index:1;
+    width:85%;
+    height:60%;
+    position:fixed;
+	top: 30%;
+	left: 7%;
+}
+
+span{
+    padding-left:.5em;
+    padding-right:.5em;
+}
+
+#mainScreen {
+    z-index: 2;
+}
+
+#mainScreen button {
+    position: relative;
+    color: #D42825;
+    font-size: 300%;
+    left: 35%;
+    top: 40%;
+}
+
+.settingsList {
+    list-style: none;
+}
+
+#settingsScreen {
+    background-color: #10062B;
+    z-index: 2;
+    font-size: 100%;
+    display: none;
+}
+
+.settingsList li {
+    display: inline-block;
+}
+
+.settingsList input {
+    visibility: hidden;
+}
+
+.settingsList label {
+    cursor: pointer;
+}
+
+.settingsList input:checked + label {
+    background: #D42825;
+}
+
+#settingsScreen label, #settingsScreen input, #settingsScreen output, #settingsScreen button {
+    position: relative;
+    left: 2%;
+    margin-top: 1%;
+}
+
+#settingsScreen button {
+    height: 10%;
+    width: 20%;
+    font-size: 100%;
+}
+
+#gameOver {
+    z-index: 2;
+    position: fixed;
+    left: 18.5%;
+    top: 45%;
+    width: 15%;
+    display:none;
+}
+
+.gameOverButton {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    font-size: 200%;
+    color: #D42825;
+}

@@ -1,23 +1,156 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	
-<head>
-<title>Dallas Scott's Home Page</title>
-<link rel="stylesheet" type="text/css" href="mainpagestyle.css">
-</head>
-
-<body>
-
-<img src="Website Background Pattern.jpg" class="bg">
-
-<div id="Links">
-<a href="http://www.dallasdscott.com/About%20Me%20Page.html" class="glow" id="First">About Me</a>
-<a href="http://www.dallasdscott.com/Resume.html" class="glow" >Resume</a>
-<a href="http://www.dallasdscott.com/Contact.html" class="glow" >Contact</a>
-</div>
-<div><img class="Logo" src="Name Logo2.png" alt="Website Logo"></div>
-
-<!--<h2><i>Solutions Without Limits For A World Without Borders</i></h2>-->
-</body>
-
+    <head>
+        <title>Dallas Scott's Home Page</title>
+        <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="Content/mainpagestyle.css">
+        <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body data-spy="scroll" data-target="#dot-nav" data-offset="1">
+        <script src="Scripts/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+        <!--<script src="Scripts/bootstrap.js"></script>-->
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/homepage.js"></script>
+	    <canvas id="homeCanvas"></canvas>
+	    <canvas id="bgCanvas"></canvas>
+        <nav id="top-nav" class="navbar nav-justified justify-content-center">
+            <a class="nav-link active" id="First" href="#AboutHeading">About</a>
+            <a class="nav-link" id="Second" href="#ResumeHeading">Resume</a>
+            <a class="nav-link" id="Third" href="#ProjectsHeading">Projects</a>
+        </nav>
+        <nav id="dot-nav">
+            <ul class="nav flex-column">
+                <li class="nav-item" title="Home" id="home-dot"><a class="nav-link active" href="#Home"></a></li>
+                <li class="nav-item" title="About" id="about-dot"><a class="nav-link" href="#AboutHeading"></a></li>
+                <li class="nav-item" title="Resume" id="resume-dot"><a class="nav-link" href="#ResumeHeading"></a></li>
+                <li class="nav-item" title="Projects" id="projects-dot"><a class="nav-link" href="#ProjectsHeading"></a></li>
+            </ul>
+        </nav>
+        <div id="Home" class="d-flex align-items-center justify-content-center">
+            <h1>Dallas Scott</h1>
+            <h2>Developer</h2>
+        </div>
+        <div id="About" class="d-flex align-items-center justify-content-center">
+            <h3 id="AboutHeading">About</h3>
+            <div id="AboutParaDiv">
+                <p>Ever since my parents purchased our first household computer, all aspects of the digital frontier have intrigued me. As I grew up, my fascination with computers became much deeper. I began to move away from simply using the computer and delved into learning how they worked. After countless hours of tinkering with and fixing my computer, I realized that I could learn to make my own software. This realization led me to the decision to pursue a degree in Computer Science.</p>
+                <p>I am currently living down in Monroe, Louisiana where I work at CenturyLink as a Software Developer. Before that I worked in downtown Chicago as a Technical Specialist for a British Software company that specializes in OCR technology. In 2012, received my Bachelor&#8217s of Science degree in Computer Science from St. John&#8217;s University in Queens, New York. While attending St. John&#8217s, I worked as the Business Manager for The Torch, the school&#8217s award-winning student newspaper, for my sophomore and junior years. I am currently looking for an junior or mid level Software Engineering position and am willing to relocate if necessary. I would like to join an organization that offers strong opportunities for personal growth and advancement.</p>
+                <p>Beyond programming, I also play the guitar, enjoy working out and personal fitness, and love to kick back with a great video game. I recently released an Android application called Iron Archive which can be downloaded for free from Amazon. I&#8217m a hard working and self-motivated individual who constantly seeks out ways to get my tasks accomplished in the most efficient manner possible.</p>
+                <p>Thank you for visiting my website, and feel free to contact me at dallasscott08@gmail.com.</p>
+            </div>
+        </div>
+        <div id="Resume" class="d-flex align-items-center justify-content-center">
+            <h3 id="ResumeHeading">Resume</h3>
+            <div id="ResumeDiv">
+                <h4>Computer Skills</h4>
+                    <p id="p1"><b>Languages: </b>C#, Java, JavaScript, SQL, JSON, XML, HTML, CSS</p>
+                    <p id="p1"><b>IDE Tools: </b>Visual Studio, Visual Studio Code, Android Studio, Intellij, Eclipse</p>
+                    <p id="p1"><b>Operating Systems: </b>Windows, Android, Linux</p>
+                    <p id="p1"><b>Software: </b>Microsoft SQL Server, PostgreSQL, Notepad++, SoapUI</p>
+                <h4>Experience</h4>
+                    <ul><h5>DealerBuilt, Software Developer<br> 
+                        June 2017 - Present, Dallas, TX</h5>
+                        <li>Primarily design, develop, test and review a .NET SOAP service</li>
+                        <li>Create REST service clients</li>
+                        <li>Write applications for dealerships to view statistics</li>
+                        <li>Assist clients in integrating with our Primary API</li>
+                        <li>Create REST services to receive information from dealerships</li>
+                        <li>Participate in Agile ceremonies</li>
+                        <li>Find and resolve issues in existing software</li>
+                        <li>Determine level of effort for resolving issues and some enhancements</li>
+                    </ul>
+                    <ul><h5>CenturyLink, Software Developer<br> 
+                        October 2014 - June 2017, Monroe, LA</h5>
+                        <li>Write Java and/or C# engines to parse and transport XML between various ticketing systems</li>
+                        <li>Consume web services from other ticketing systems</li>
+                        <li>Write Web GUIs for analysts and testers to view functionality while developing</li>
+                        <li>Wrote an MQ listener to publish new ticket information to database in real-time</li>
+                        <li>Wrote code to integrate previously existing logging with cloud based logging system</li>
+                        <li>Participated in demonstrations of new functionality to clients and business partners</li>
+                        <li>Find and resolve issues in existing software</li>
+                        <li>Determine level of effort for resolving issues and some enhancements</li>
+                    </ul>
+                    <ul><h5>Adsensa, Technical Specialist<br>
+                        October 2012 - October 2014, Chicago, IL</h5>
+                        <li>Write JavaScript which interacts with OCR software to detect specific strings within documents</li>
+                        <li>Write product enhancements and utilities primarily in Java</li>
+                        <li>Participate in Research and Development for work-flow automation</li>
+                        <li>Test and debug software before incorporation into production</li>
+                        <li>Deploy software updates to clients on time</li>
+                        <li>Assist in writing code specifications</li>
+                        <li>Work collaboratively with coworkers and clients to make software upgrades</li>
+                        <li>Write JavaScript which interacts with OCR software to detect specific strings within documents</li>
+                        <li>Give presentations to clients on functionality of software</li>
+                        <li>Make product enhancement suggestions</li>
+                        <li>Interview candidates for Technical Specialist positions</li>
+                        <li>Recruit Computer Science majors at college campuses</li>
+                        <li>Made hiring recommendations that resulted in two job offers</li>
+                        <li>Recognized for outstanding contributions that improved efficiency and accuracy for clients</li>
+                    </ul>
+                <h4>Activities</h4>
+                    <ul><h5>The Torch Newspaper, St. John&#8217s University, Business Manager</h5>
+                        <li>Assist General Manager in identifying potential advertisers and distribute cost information to clients</li>
+                        <li>Use Adobe InDesign to generate invoices to bill advertisers</li>
+                        <li>Create outline for the newspaper</li>
+                        <li>Make calls to potential prospects to market advertising space</li>
+                        <li>Develop pricing strategy for advertisers</li>
+                        <li>Generate and monitor budgeted expenses</li>
+                    </ul>
+                <h4>Achievements</h4>
+                    <p id="p1">Dean&#8217s List, Saint John&#8217s University, August 2009 to May 2012<br>
+                    Academic Scholarship, Saint John&#8217s University, August 2008 to May 2009<br>
+                <h4>Education</h4>
+                    <p id="p1">St. John&#8217s University Jamaica, NY<br>
+                    Computer Science Major 2008 &#151 2012<br>
+                    Graduation Date	&#151 May 13, 2012<br>
+                    Graduating GPA &#151 3.07<br></p>
+            </div>
+        </div>
+        <div id="Projects" class="d-flex align-items-center justify-content-center">
+            <h3 id="ProjectsHeading">Projects</h3>
+            <div class="container">
+                <div class="row projectsContainer" align="center">
+                    <div id="IronArchiveDiv" class="col p-1 m-5 card">
+                        <a href="https://play.google.com/store/apps/details?id=com.blue.ironarchivev1&hl=en_US">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="./Images/Iron_Archive_Banner.png">
+                                    <h5>Iron Archive</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Fitness routine tracking app for Android</p>
+                                <a href="https://github.com/dallasscott08/IronArchive">
+                                    <img class="github-icon" src="./Images/GitHub icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="TAKDiv" class="col p-1 m-5 card">
+                        <a href="./TAK">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="./Images/TAK_Banner.svg">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Different take on a classic game</p>
+                                <a href="https://github.com/dallasscott08/TetrisAttackClone">
+                                    <img class="github-icon" src="./Images/GitHub icon.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

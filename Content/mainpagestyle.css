@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+body{
+	font-family: 'Lato', 'Century Gothic', Arial, sans-serif;
+	color:#F5ECDA;
+    position: relative;
+}
+
+#homeCanvas {
+	z-index:-1;
+	min-height: 100vh;
+	min-width: 100%;
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+	
+#bgCanvas {
+	background: #10062B;
+	z-index:-2;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#top-nav {
+	opacity: 0.0;
+	position: absolute;
+	left:0;
+	right:0;
+}
+
+a{
+	font-size:125%;
+	font-weight: 300;
+	text-decoration: none;
+	color: #F5ECDA;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #F5ECDA;
+}
+
+#First, #Second, #Third{
+	border-right: 1px solid #F5ECDA;
+	-moz-border-image: linear-gradient( to bottom, rgba(245, 236, 218, 0) 25%, rgba(245, 236, 218, 1) 25%, rgba(245, 236, 218, 1) 75%, rgba(245, 236, 218, 0) 75%) 1;
+	-webkit-border-image: linear-gradient( to bottom, rgba(245, 236, 218, 0) 25%, rgba(245, 236, 218, 1) 25%, rgba(245, 236, 218, 1) 75%, rgba(245, 236, 218, 0) 75%) 1;
+	-o-border-image: linear-gradient( to bottom, rgba(245, 236, 218, 0) 25%, rgba(245, 236, 218, 1) 25%, rgba(245, 236, 218, 1) 75%, rgba(245, 236, 218, 0) 75%) 1;
+	border-image: linear-gradient( to bottom, rgba(245, 236, 218, 0) 25%, rgba(245, 236, 218, 1) 25%, rgba(245, 236, 218, 1) 75%, rgba(245, 236, 218, 0) 75%) 1;
+}
+
+#First:after, #AboutHeading:after{
+	border-bottom: solid 4px #FF3C1E; 
+}
+
+#Second:after, #ResumeHeading:after{
+	border-bottom: solid 4px #33B5E5; 
+}
+
+#Third:after, #ProjectsHeading:after{
+	border-bottom: solid 4px #FFFF31; 
+}
+
+a:after {
+	display:block;
+	content: ''; 
+	transform: scaleX(0);  
+	transition: transform 250ms ease-in-out;
+}
+
+a:hover:after { transform: scaleX(1); }
+
+#First{
+	border-left: 1px solid #F5ECDA;
+}
+
+h1{
+	font-size: 300%;
+	color: #FF3C1E;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 300%;
+	font-weight: 100;
+}
+
+h3{
+	font-size: 300%;
+	font-weight: 300;
+}
+
+h3:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    /*border-bottom: 1px solid #FF3C1E;  This creates the border. Replace black with whatever color you want. */
+}
+
+h4{
+	font-size: 200%;
+	font-weight: 200;
+}
+
+h4:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    /*margin: 0 auto;  This will center the border. */
+    width: 35%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #33B5E5; /* This creates the border. Replace black with whatever color you want. */
+}
+
+h5{
+	font-size: 200%;
+	font-weight: 300;
+}
+
+#Home{
+	height:100vh;
+	flex-direction:column;
+}
+
+#About{
+	height: 200vh;
+	flex-direction:column;
+}
+
+#AboutParaDiv{
+	width: 60%;
+	text-indent: 5%;
+}
+
+#Resume{
+	height:2000px;
+	flex-direction:column;
+}
+
+#Projects{
+	height:100vh;
+	flex-direction:column;
+}
+
+#IronArchiveDiv{
+	background-color:transparent;
+}
+
+#TAKDiv{
+	background-color: transparent;
+}
+
+.projectsContainer{
+	color:#10062B;
+}
+
+.projectsContainer p{
+	text-indent: 5%;
+}
+
+.projectsContainer .card{
+    position: relative;
+}
+
+.projectsContainer .card .face{
+    height: 225px;
+    transition: 0.35s;
+}
+
+.projectsContainer .card .face.face1{
+    position: relative;
+    background: #10062B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.projectsContainer .card:hover .face.face1{
+    transform: translateY(0);
+}
+
+#IronArchiveDiv:hover .face1{
+	background:#33B5E5;
+}
+
+#TAKDiv:hover .face1{
+	background:#10062B;
+}
+
+.projectsContainer .card .face.face1 .content{
+    transition: 0.35s;
+}
+
+.projectsContainer .card .face.face1 .content img{
+    max-width: 150px;
+}
+
+.projectsContainer .card .face.face2{
+    position: relative;
+    background: #F5ECDA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-125px);
+}
+
+.projectsContainer .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.github-icon{
+    width: 40px;
+}
+
+#dot-nav{    
+	position: fixed;
+	right: 5%;
+	top: 35%;
+	z-index: 999;
+}
+
+#dot-nav ul {
+	list-style: none;
+}
+
+#dot-nav a.active, #dot-nav a:hover {
+	background-color: #F5ECDA;
+}
+
+#dot-nav a {
+	padding: 5px;
+	margin: 100%;
+	position: relative;
+	border: 1px solid #F5ECDA;
+	border-radius: 50%;
+	transition: 0.25s all ease-in-out;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-punk-custom-content .tooltipster-content {
+	color: #F5ECDA;
+	padding: 8px;
+}
+	
+.tooltipster-sidetip.tooltipster-punk.tooltipster-punk-custom-box .tooltipster-box {
+	/*background: #D3D3D3;*/
+	border-radius: 6px;
+	/*box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.4);*/
+}
+
+/*.tooltipster-sidetip.tooltipster-punk.tooltipster-left.tooltipster-punk-custom-arrow .tooltipster-arrow-border{
+	border-left-color:#808080;
+}*/
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-punk-home .tooltipster-box {
+	border-color: #F5ECDA;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-punk-about .tooltipster-box {
+	border-color: #FF3C1E;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-punk-resume .tooltipster-box {
+	border-color: #33B5E5;
+}
+
+.tooltipster-sidetip.tooltipster-punk.tooltipster-punk-projects .tooltipster-box {
+	border-color: #FFFF31;
+}

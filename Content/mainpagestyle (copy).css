@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+body{
+	font-family: 'Lato', 'Century Gothic', Arial, sans-serif;
+	color:#F5ECDA;
+}
+
+#homeCanvas {
+	background: #10062B;
+    z-index:-1;
+	min-height: 100%;
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+a{
+	font-size:125%;
+	font-weight: 300;
+	text-decoration: none;
+	border-right: 1px solid #F5ECDA;
+	color: #F5ECDA;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #F5ECDA;
+}
+
+#First:after, #AboutHeading:after{
+	border-bottom: solid 4px #FF3C1E; 
+}
+
+#Second:after, #ResumeHeading:after{
+	border-bottom: solid 4px #33B5E5; 
+}
+
+#Third:after, #ProjectsHeading:after{
+	border-bottom: solid 4px #FFFF31; 
+}
+
+a:after {
+	display:block;
+	content: ''; 
+	transform: scaleX(0);  
+	transition: transform 250ms ease-in-out;
+}
+
+a:hover:after { transform: scaleX(1); }
+
+#First{
+	border-left: 1px solid #F5ECDA;
+}
+
+h1{
+	font-size: 300%;
+	color: #FF3C1E;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 300%;
+	font-weight: 100;
+}
+
+h3{
+	font-size: 300%;
+	font-weight: 300;
+}
+
+h3:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    /*border-bottom: 1px solid #FF3C1E;  This creates the border. Replace black with whatever color you want. */
+}
+
+h4{
+	font-size: 200%;
+	font-weight: 200;
+}
+
+h4:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    /*margin: 0 auto;  This will center the border. */
+    width: 35%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #33B5E5; /* This creates the border. Replace black with whatever color you want. */
+}
+
+h5{
+	font-size: 200%;
+	font-weight: 300;
+}
+
+#Home{
+	height:100vh;
+	flex-direction:column;
+}
+
+#About{
+	height: 2000px;
+	flex-direction:column;
+}
+
+#AboutParaDiv{
+	width: 60%;
+	text-indent: 5%;
+}
+
+#Resume{
+	height:2000px;
+	flex-direction:column;
+}
+
+#Projects{
+	height:2000px;
+	flex-direction:column;
+}
+
+#IronArchiveDiv{
+	background-color:#33B5E5;
+}
+
+#TAKDiv{
+	background-color: #FF3C1E;
+}
+
+#DaFiDlDiv{
+	background-color: #FFFF31;
+}
+
+.projectsContainer{
+	color:#F5ECDA;
+}
+
+.projectsContainer p{
+	text-indent: 5%;
+}
